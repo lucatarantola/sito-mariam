@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Per Mariam ✨</title>
+    <!-- Google Fonts: Poppins per il testo pulito, Caveat per un tocco personale sciolto -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* --- STILI BASE E MINIMALISTI --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #faf5f6; /* Rosa pastello leggerissimo */
+            color: #4a4a4a;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 500px; /* Ridotto un po' la larghezza massima per rendere il layout più slanciato */
+            margin: 0 auto;
+            padding: 20px 10px;
+        }
+
+        /* --- INTESTAZIONE --- */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-family: 'Caveat', cursive;
+            font-size: 3rem;
+            color: #d46a84;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            color: #8c7b83;
+            font-weight: 300;
+        }
+
+        /* --- GALLERIA FOTO VERTICALE --- */
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #735360;
+            margin-bottom: 20px;
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+
+        .photo-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-bottom: 45px;
+        }
+
+        .photo-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            border: 1px solid #f0e2e7;
+        }
+
+        /* Contenitore immagine VERTICALE (proporzione 3:4 classica per foto da smartphone) */
+        .photo-frame {
+            width: 100%;
+            height: 520px; /* Aumentata l'altezza per rendere la foto verticale */
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #f3e8eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Mantiene la foto ben riempita senza distorcerla */
+            display: block;
+        }
+
+        .caption {
+            text-align: center;
+            margin-top: 12px;
+            font-size: 0.95rem;
+            color: #6b5b63;
+        }
+
+        /* --- MESSAGGI D'AMORE --- */
+        .messages-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            margin-bottom: 45px;
+        }
+
+        .message-card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 3px solid #e8a5b8;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+        }
+
+        .message-card p {
+            font-size: 0.95rem;
+            color: #55484f;
+        }
+
+        /* --- FOOTER PICCOLO E DOLCE --- */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.85rem;
+            color: #a3929a;
+        }
+
+        /* Responsive per smartphone */
+        @media (max-width: 480px) {
+            h1 { font-size: 2.4rem; }
+            .photo-frame { height: 420px; } /* Proporzione verticale adatta ai telefoni piccoli */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- 1. INTESTAZIONE -->
+        <header>
+            <h1>Un piccolo pensiero per la mia puzzona ❤️</h1>
+            <p class="subtitle">Visto che hai perso il biglietto ho pensato di farti un pensierino così non sei giù di morale</p>
+        </header>
+
+        <!-- 2. GALLERIA FOTO -->
+        <section>
+            <h2 class="section-title">I nostri scatti</h2>
+            <div class="photo-grid">
+
+                <!-- FOTO 1 -->
+                <div class="photo-card">
+                    <div class="photo-frame">
+                        <img src="img1.jpeg" alt="Foto Mariam 1" id="img1">
+                    </div>
+                    <p class="caption">Quando ci siamo messi insieme io e la mia tata</p>
+                </div>
+
+                <!-- FOTO 2 -->
+                <div class="photo-card">
+                    <div class="photo-frame">
+                        <img src="img2.jpeg" alt="Foto Mariam 2" id="img2">
+                    </div>
+                    <p class="caption">A varazzeeeeeeee</p>
+                </div>
+
+                <!-- FOTO 3 -->
+                <div class="photo-card">
+                    <div class="photo-frame">
+                        <img src="img3.jpeg" alt="Foto Mariam 3" id="img3">
+                    </div>
+                    <p class="caption">Prima volta a casa mia</p>
+                </div>
+
+                <!-- FOTO 4 -->
+                <div class="photo-card">
+                    <div class="photo-frame">
+                        <img src="img4.jpeg" alt="Foto Mariam 4" id="img4">
+                    </div>
+                    <p class="caption">Primo nostro appuntamento</p>
+                </div>
+
+                <!-- FOTO 5 -->
+                <div class="photo-card">
+                    <div class="photo-frame">
+                        <img src="img5.jpeg" alt="Foto Mariam 5" id="img5">
+                    </div>
+                    <p class="caption">Quando mi hai chiesto la nostra prima foto insieme</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. MESSAGGINI D'AMORE -->
+        <section>
+            <h2 class="section-title">Note veloci</h2>
+            <div class="messages-container">
+                
+                <div class="message-card">
+                    <p>Grazie per esserci sempre e salvarmi</p>
+                </div>
+
+                <div class="message-card">
+                    <p>Ti amo sempre di più</p>
+                </div>
+
+                <div class="message-card">
+                    <p>Spero che questo piccolo pensiero ti strappi un sorriso oggi!</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>Fatto con cura per te ❤️</p>
+        </footer>
+
+    </div>
+
+    <script>
+        console.log("Sito per Mariam caricato con successo!");
+    </script>
+</body>
+</html>
